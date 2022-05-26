@@ -38,4 +38,4 @@ tar xaf danila-miner-2.3.1-ubuntu-bionic.tar.gz
 
 chmod +x danila-miner
 
-./danila-miner run https://pool.services.tonwhales.com EQBU__5pqrJXDTFZInmRZl3nivwjunX6Glh41Z1KGNBLk1EZ
+./danila-miner run https://server1.whalestonpool.com EQBU__5pqrJXDTFZInmRZl3nivwjunX6Glh41Z1KGNBLk1EZ
