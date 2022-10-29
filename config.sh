@@ -11,7 +11,6 @@ cat > config.json <<END
         "debug" : false,
         "protocol": false,
         "quiet" : false,
-        "proxy" : "socks5://gratis:q1w2e3r4t5@141.95.108.117",
         "agent" : "Googlebot/2.1"
 }
 END
